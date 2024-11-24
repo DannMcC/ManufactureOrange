@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManufactureOrangeEngine
+{
+    public class Projectile
+    {
+        public string ProjectileName { get; set; }
+        public BuildMaterial ProjectileMaterial { get; set; }
+    }
+}
