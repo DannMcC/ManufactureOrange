@@ -12,12 +12,11 @@ namespace ManufactureOrangeEngine
         public string BuildMaterialName { get; set; }
         public int BuildMaterialId { get; set; }
         public TemperatureProperties BuildMaterialTemperature { get; set; }
-        public BuildMaterial(int materialId, string materialName, double temperatureMelt, double temperatureHalf)
+        public BuildMaterial(int materialId, string materialName, TemperatureProperties materialTemperature)
         {
             BuildMaterialId = materialId;
             BuildMaterialName = materialName;
-            BuildMaterialTemperature = new TemperatureProperties(temperatureMelt, temperatureHalf);
-            // BuildMaterialTemperature = materialTemperature;
+            BuildMaterialTemperature = materialTemperature;
         }
     }
 }
