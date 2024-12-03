@@ -14,9 +14,9 @@ namespace ManufactureOrangeEngine
         public static readonly List<BuildMaterial> BuildMaterials = new List<BuildMaterial>();
         public static readonly List<Projectile> Projectiles = new List<Projectile>();
 
-        public const int BUILD_MATERIAL_ID_STEEL = 1;
-        public const int BUILD_MATERIAL_ID_LEAD = 2;
-        public const int BUILD_MATERIAL_ID_SUPERALLOY= 3;
+        public const int BUILD_MATERIAL_ID_STEEL = 10;
+        public const int BUILD_MATERIAL_ID_LEAD = 20;
+        public const int BUILD_MATERIAL_ID_SUPERALLOY= 30;
 
         static Factory()
         {
@@ -37,8 +37,8 @@ namespace ManufactureOrangeEngine
             BuildMaterials.Add(SuperAlloy);
 
             Projectiles.Add(new Projectile(1, "Steel one", Steel));
-            Projectiles.Add(new Projectile(1, "Lead one", Lead));
-            Projectiles.Add(new Projectile(1, "SuperAlloy one", SuperAlloy));
+            Projectiles.Add(new Projectile(2, "Lead one", Lead));
+            Projectiles.Add(new Projectile(3, "SuperAlloy one", SuperAlloy));
         }
 
     }
