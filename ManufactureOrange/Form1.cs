@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ManufactureOrangeEngine;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace ManufactureOrange
         public Form1()
         {
             InitializeComponent();
+
+            for (int i = 0; i < Factory.BuildMaterials.Count; i++)
+            {
+
+                comboBoxInput1.Items.Add(Factory.BuildMaterials[i].BuildMaterialName);
+            }
+
+        }
+
+        private void comboBoxInput1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

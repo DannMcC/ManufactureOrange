@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ManufactureOrangeEngine
 {
-    internal class Factory
+    public static class Factory
     {
         public static readonly List<BuildMaterial> BuildMaterials = new List<BuildMaterial>();
         public static readonly List<Projectile> Projectiles = new List<Projectile>();
@@ -30,7 +30,7 @@ namespace ManufactureOrangeEngine
 
             BuildMaterial Steel = new BuildMaterial(BUILD_MATERIAL_ID_STEEL, "Steel", steelTemperatureProperties);
             BuildMaterial Lead = new BuildMaterial(BUILD_MATERIAL_ID_LEAD, "Lead", leadTemperatureProperties);
-            BuildMaterial SuperAlloy = new BuildMaterial(BUILD_MATERIAL_ID_SUPERALLOY, "Super Allow", superAlloyTemperatureProperties);
+            BuildMaterial SuperAlloy = new BuildMaterial(BUILD_MATERIAL_ID_SUPERALLOY, "Super Alloy", superAlloyTemperatureProperties);
 
             BuildMaterials.Add(Steel);
             BuildMaterials.Add(Lead);
