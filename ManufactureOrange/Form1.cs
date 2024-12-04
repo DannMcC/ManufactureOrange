@@ -40,6 +40,7 @@ namespace ManufactureOrange
                         label1.Text = Factory.BuildMaterials[i].BuildMaterialName;
                         label2.Text = Factory.BuildMaterials[i].BuildMaterialTemperature.TemperatureKelvinMeltPoint.ToString();
                         label3.Text = Factory.BuildMaterials[i].BuildMaterialId.ToString();
+                        break;
                     };
                 }
             }
